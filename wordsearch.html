@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search Game</title>
+  <link rel="stylesheet" type="text/css" href="css/wordsearchstyles.css">
+</head>
+<body>
+  <!-- <a href="ducks.html">Back to Ducks</a> -->
+  <h1>Word Search</h1>
+  <div class="container">
+      <div id="grid"></div>
+      <div id="word-bank">
+            <h2>Word Bank:</h2>
+            <ul>
+                <li>Muffins</li>
+                <li>Cake</li>
+                <li>Bread</li>
+                <li>Cookies</li>
+                <li>Donuts</li>
+                <li>Pie</li>
+                <li>Pudding</li>
+            </ul>
+        </div>
+  </div>
+
+  <script src="js/wordsearch.js"></script>
+
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <h2>Congratulations!</h2>
+      <p>You found all the words!</p>
+      <div class="modal-buttons">
+        <button id="play-again-btn">Play Again</button>
+        <button id="exit-btn">Exit</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

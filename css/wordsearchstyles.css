@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 20px;
+  }
+
+  a{
+    float: left;
+    color:#003d7a;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  a:hover{
+    color: #002E5D;
+  }
+
+  h1{
+    left:auto;
+    right: auto;
+    margin-bottom: 0px;
+    margin-left:15%;
+    margin-right: 25%;
+    text-align: center;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: fit-content;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    gap: 8px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  #grid div {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  #word-bank {
+    margin-top: 20px;
+    text-align: left;
+    border: 2px solid black;
+    padding: 15px;
+  }
+
+  .correct {
+    background-color: #76c791; /* Soft green for correct words */
+  }
+  
+  .found {
+    text-decoration: line-through;
+    color: #a0a0a0; /* Grey for completed words */
+  }
+
+  .modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-buttons {
+    margin-top: 20px;
+  }
+  
+  .modal-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3f4684; /* color for buttons */
+    color: white;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #2b2879; /* Slightly darker on hover */
+  }
